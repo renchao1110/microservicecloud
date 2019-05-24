@@ -1,0 +1,19 @@
+server:
+  port: 8008
+spring:
+  application:
+    name: micro-eureka-client-zuul
+zuul:
+  routes:
+    city:
+      path: /city/**
+      serviceId: micro-weather-city-eureka
+    data:
+      path: /data/**
+      serviceId: micro-weather-data-eureka
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+    register-with-eureka: true
+    fetch-registry: true

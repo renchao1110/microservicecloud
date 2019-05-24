@@ -1,0 +1,11 @@
+server:
+  port: 8014
+spring:
+  application:
+    name: micro-weather-report-eureka
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://localhost:8001/eureka

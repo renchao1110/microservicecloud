@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: micro-weather-data-eureka
+  redis:
+    host: localhost
+    port: 6379
+server:
+  port: 8012
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8001/eureka
+    register-with-eureka: true
+    fetch-registry: true

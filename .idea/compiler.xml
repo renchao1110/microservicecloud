@@ -6,20 +6,41 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="config-client" />
+        <module name="config-server" />
         <module name="eureka-server2" />
         <module name="euteka-server" />
         <module name="feign-consumer" />
+        <module name="micro-eureka-client-zuul" />
+        <module name="micro-weather-city-eureka" />
+        <module name="micro-weather-collection-eureka" />
+        <module name="micro-weather-data-eureka" />
+        <module name="micro-weather-eureka-client" />
+        <module name="micro-weather-eureka-server" />
+        <module name="micro-weather-report-eureka" />
         <module name="ribbon-consumer" />
         <module name="service-provider" />
         <module name="service-provider2" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="micro-weather-collection-eureka-feign" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="config-client" options="" />
+      <module name="config-server" options="" />
       <module name="eureka-server2" options="-parameters" />
       <module name="euteka-server" options="-parameters" />
       <module name="feign-consumer" options="" />
+      <module name="micro-eureka-client-zuul" options="" />
+      <module name="micro-weather-city-eureka" options="" />
+      <module name="micro-weather-collection-eureka" options="-parameters" />
+      <module name="micro-weather-collection-eureka-feign" options="-parameters" />
+      <module name="micro-weather-data-eureka" options="" />
+      <module name="micro-weather-eureka-server" options="" />
+      <module name="micro-weather-report-eureka" options="" />
       <module name="ribbon-consumer" options="-parameters" />
       <module name="service-provider" options="-parameters" />
       <module name="service-provider2" options="-parameters" />
